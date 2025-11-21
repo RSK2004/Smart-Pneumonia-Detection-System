@@ -1,0 +1,116 @@
+/* Container covers full page and scrollable */
+.analysis-container {
+    min-height: 100vh;
+    /* ensures full screen */
+    width: 100vw;
+    background: url("/images/analysis-bg.jpg") no-repeat center top;
+    background-size: cover;
+    /* cover entire page */
+    position: relative;
+    padding-top: 80px;
+    /* space for navbar */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    /* prevent horizontal overflow */
+}
+
+/* Navbar same as signup */
+.auth-navbar {
+    position: fixed;
+    /* fixed so it stays on top */
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    /* optional slight overlay */
+}
+
+.auth-logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Nav links */
+.auth-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.auth-nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.auth-nav-links li a:hover {
+    transform: translateY(-5px);
+    color: #00eaff;
+}
+
+/* Analysis options */
+.analysis-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.analysis-card {
+    background: rgba(133, 175, 19, 0.797);
+    padding: 40px 60px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.analysis-card:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 234, 255, 0.608);
+}
+
+/* Patient report */
+.patient-report {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+/* Analysis image */
+.analysis-image {
+    width: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Dashboard bar */
+.dashboard {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.graph-bar {
+    height: 30px;
+    background: #00eaff;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}

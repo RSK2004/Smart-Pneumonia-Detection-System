@@ -1,0 +1,160 @@
+/* ====== Background ====== */
+.auth-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/project.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Overlay */
+.auth-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ====== Navbar ====== */
+.auth-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    /* FIXED */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-sizing: border-box;
+    /* FIXED */
+}
+
+.auth-logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* small fix */
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.auth-nav-links {
+    list-style: none;
+    display: flex;
+    /* keeps items in a row */
+    gap: 20px;
+}
+
+.auth-nav-links li {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: navSlideDown 1s ease forwards;
+    list-style: none;
+}
+
+.auth-nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;
+    display: inline-block;
+    /* needed for transform */
+    transition: transform 0.3s ease;
+}
+
+.auth-nav-links li a:hover {
+    transform: translateY(-5px);
+    color: #00eaff;
+}
+
+/* ====== Form Box ====== */
+.auth-box {
+    width: 380px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    z-index: 2;
+    animation: fadeUp 1s ease forwards;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+.auth-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.auth-input {
+    width: 100%;
+    padding: 12px 13px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #00eaff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-button:hover {
+    background: #00c8d3;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes navSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
