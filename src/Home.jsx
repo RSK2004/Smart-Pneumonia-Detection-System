@@ -7,7 +7,6 @@ const Home = () => {
     <div className="home-container">
         <div className="position-overlay"></div>
 
-      {/* Navbar */}
       <nav className="navbar">
         <div className="nav-logo">LaserScan AI</div>
         <ul className="nav-links">
@@ -18,7 +17,7 @@ const Home = () => {
         </ul>
       </nav>
 
-      {/* Center Content */}
+
       <div className="center-content">
         <h1 className="title">Smart LaserScan AI</h1>
         <p className="subtitle">

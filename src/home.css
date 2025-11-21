@@ -25,22 +25,19 @@
     left: 0;
     width: 100%;
     padding: 20px 60px;
-    /* THIS FIXES YOUR ISSUE */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
     box-sizing: border-box;
-    /* Prevents pushing */
 }
 
-/* Make all navbar links white */
 .navbar a {
     color: white;
     text-decoration: none;
 }
 
-/* Navbar Links */
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -54,7 +51,7 @@
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover animation: move upward + color change */
+
 .nav-links li:hover {
     color: #00eaff;
     transform: translateY(-5px);
@@ -62,18 +59,16 @@
 
 .nav-logo{
     font-size: 20px;
-    /* Increased size (you can set 34 or 36 if you want even larger) */
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 600;
-    /* Optional: gives a premium look */
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 
-/* Center content */
+
 .center-content {
     position: absolute;
     top: 50%;

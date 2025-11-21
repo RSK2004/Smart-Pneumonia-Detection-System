@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./analysis.css";
 
 const Analysis = () => {
-  const [selected, setSelected] = useState(""); // "" | "IR" | "Xray"
+  const [selected, setSelected] = useState("");
 
   const handleSelect = (type) => {
     setSelected(type);
@@ -11,12 +11,12 @@ const Analysis = () => {
 
   return (
     <div className="analysis-container">
-      {/* Navbar */}
+
       <nav className="auth-navbar">
         <div className="auth-logo"><Link to="/">LaserScan AI</Link></div>
       </nav>
 
-      {/* Analysis Options */}
+
       {selected === "" && (
         <div className="analysis-options">
           <div className="analysis-card" onClick={() => handleSelect("IR")}>
@@ -28,7 +28,7 @@ const Analysis = () => {
         </div>
       )}
 
-      {/* IR Analysis */}
+
       {selected === "IR" && (
         <div className="analysis-result">
           <h2>IR Analysis Report</h2>
@@ -48,7 +48,7 @@ const Analysis = () => {
         </div>
       )}
 
-      {/* X-ray Analysis */}
+
       {selected === "Xray" && (
         <div className="analysis-result">
           <h2>X-ray Analysis Report</h2>

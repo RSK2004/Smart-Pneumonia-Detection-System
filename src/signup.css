@@ -1,4 +1,3 @@
-/* ====== Background ====== */
 .auth-container {
     height: 100vh;
     width: 100vw;
@@ -15,7 +14,7 @@
     overflow: hidden;
 }
 
-/* Overlay */
+
 .auth-overlay {
     position: absolute;
     width: 100%;
@@ -26,7 +25,7 @@
     z-index: 1;
 }
 
-/* ====== Navbar ====== */
+
 .auth-navbar {
     position: absolute;
     top: 0;
@@ -80,7 +79,7 @@
     color: #00eaff;
 }
 
-/* ====== Form Box ====== */
+
 .auth-box {
     width: 380px;
     padding: 40px;
@@ -97,7 +96,7 @@
     align-items: center;
 }
 
-/* Title */
+
 .auth-title {
     color: white;
     font-size: 30px;
@@ -105,7 +104,7 @@
     margin-bottom: 25px;
 }
 
-/* Inputs */
+
 .auth-input {
     width: 100%;
     padding: 12px 13px;
@@ -134,7 +133,7 @@
     background: #00c8d3;
 }
 
-/* Animation */
+
 @keyframes fadeUp {
     from {
         opacity: 0;
