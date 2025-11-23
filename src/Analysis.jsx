@@ -42,7 +42,7 @@ const Analysis = () => {
           <img src="/images/ir-sample.jpg" alt="IR Scan" className="analysis-image" />
           <div className="dashboard">
             <h3>Pneumonia Detection (IR System)</h3>
-            <div className="graph-bar" style={{width: "80%"}}>80% Pneumonia Detected</div>
+            <div className="graph-bar" style={{width: "80%",color: "black"}}>80% Pneumonia Detected</div>
           </div>
           <button className="auth-button" onClick={() => setSelected("")}>Back</button>
         </div>
