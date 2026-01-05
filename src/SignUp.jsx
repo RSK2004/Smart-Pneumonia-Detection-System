@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./signup.css";
 import { useState } from "react";
+import createMockIRReport from "./utils/dynamicmockIRReport";
 
 const Signup = () => {
 
@@ -20,10 +21,22 @@ const Signup = () => {
 
       const data = await res.json();
       alert(data.message);
+      setUsername("");
+      setPassword("");
     } 
     catch (err) {
         alert("Signup failed");
-      }
+        setUsername("");
+        setPassword("");
+    }
+    const report = createMockIRReport(username);
+
+    // Save report using username as key
+    localStorage.setItem(
+    `ir_report_${username.toLowerCase()}`,
+    JSON.stringify(report)
+    );
+
   };
 
   return (

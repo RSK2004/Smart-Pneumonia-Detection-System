@@ -2,5 +2,33 @@
   {
     "username": "rahulskaushik2004@gmail.com",
     "password": "$2b$10$rHVui/QXT0cgggwN0PeIJOv5DjO.eoI8JBVTpod7ZIwXsY1I3dEm."
+  },
+  {
+    "username": "john",
+    "password": "$2b$10$NkcHn8i3hXiE7MDQv8R05eniHpXBtcWS3s6QMvlEmE3hZoobzioy6"
+  },
+  {
+    "username": "sarah",
+    "password": "$2b$10$2WjmJ3Us1.3q3NQKVaqi3eTan5MW4H2xgBLlKYCyF.YLB0YsQZAju"
+  },
+  {
+    "username": "rahul",
+    "password": "$2b$10$B4TD64gyFnJEToVZRAWHVOyNROPdxNP8HIIoec1plxvhqa1D6mp9O"
+  },
+  {
+    "username": "anita",
+    "password": "$2b$10$VvbDipi7rGj8bZELovBoL.F416HdLE.Z3r0ZjgCuLVamWCAMPU/rW"
+  },
+  {
+    "username": "alex",
+    "password": "$2b$10$SkRTrymmJDXOfvp5KkttXOOoSn1v5b.FoBayxqLjE0jSsoc/HlZkC"
+  },
+  {
+    "username": "ram",
+    "password": "$2b$10$.7IXY8P/PF/z9drCPw8WHucD.d0XXPAUruIFLUV34OtNGW./wm85C"
+  },
+  {
+    "username": "Rahulbose",
+    "password": "$2b$10$1imnJxB4bbFk.d.W9o3hWug7TbuWpsYB46cFZ2SOVn.ld83HVLIZi"
   }
 ]
