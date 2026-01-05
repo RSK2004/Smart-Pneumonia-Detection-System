@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./analysis.css";
+import {io} from "socket.io-client";
 
 const Analysis = () => {
   const [selected, setSelected] = useState("");
@@ -8,6 +9,12 @@ const Analysis = () => {
   const handleSelect = (type) => {
     setSelected(type);
   };
+
+  const socket = io("http://localhost:6000");
+
+  socket.on("ai_result", (data) => {
+    setPrediction(data.prediction);
+  });
 
   return (
     <div className="analysis-container">
