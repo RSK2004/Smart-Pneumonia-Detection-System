@@ -6,6 +6,8 @@ import {io} from "socket.io-client";
 const Analysis = () => {
   const [selected, setSelected] = useState("");
 
+  const username = localStorage.getItem("username");
+
   const handleSelect = (type) => {
     setSelected(type);
   };
@@ -16,8 +18,19 @@ const Analysis = () => {
     setPrediction(data.prediction);
   });
 
+  const logout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    window.location.href = "/login";
+  };
+
   return (
     <div className="analysis-container">
+
+      <div className="user-bar">
+        <span>Welcome, {username}!</span>
+        <button onClick={logout} className="logout-btn">Logout</button>
+      </div>
 
       <nav className="auth-navbar">
         <div className="auth-logo"><Link to="/">LaserScan AI</Link></div>

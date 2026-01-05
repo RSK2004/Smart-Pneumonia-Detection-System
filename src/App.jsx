@@ -4,6 +4,7 @@ import About from "./About";
 import SignUp from "./SignUp";
 import Login from "./Login";
 import Analysis from "./Analysis";
+import ProtectedRoute from "./ProtectedRoute";
 
 function App() {
   return (
@@ -13,6 +14,14 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
       <Route path="/analysis" element={<Analysis />} />
+      <Route
+        path="/analysis"
+        element={
+          <ProtectedRoute>
+            <Analysis />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 }

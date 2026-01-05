@@ -22,7 +22,8 @@ const Login = () => {
 
       if (data.token) {
         localStorage.setItem("token", data.token);
-        navigate("/analysis");
+        localStorage.setItem("username", username);
+        window.location.href = "/analysis";
       } else {
         alert(data.message);
       }

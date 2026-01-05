@@ -3,6 +3,9 @@ import "./home.css";
 import {Link} from "react-router-dom";
 
 const Home = () => {
+
+  const token = localStorage.getItem("token");
+
   return (
     <div className="home-container">
         <div className="position-overlay"></div>
@@ -13,7 +16,7 @@ const Home = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/signup">Login/SignUp</Link></li>
-          <li><Link to="/analysis">Analysis</Link></li>
+          {token && <li><Link to="/analysis">Analysis</Link></li>}
         </ul>
       </nav>
 

@@ -107,3 +107,31 @@
     line-height: 30px;
     font-weight: bold;
 }
+
+.user-bar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+.logout-btn {
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid #00eaff;
+    color: #00eaff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #00eaff;
+    color: black;
+}
